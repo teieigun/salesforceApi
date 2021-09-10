@@ -23,7 +23,7 @@ public class RestMy {
 					"Itforce111").useSandbox().build();
 
 
-			/**データ登録処理*/
+			/**データ登録処理 insert*/
 //			CreateJobResponse createJobResponse = client.createJob("Teieigun__c", OperationEnum.INSERT);
 //			String jobId = createJobResponse.getId();
 //
@@ -36,7 +36,7 @@ public class RestMy {
 
 			
 			/**
-			 * データUPSERT処理 
+			 * データUPSERT処理 upsert
 			 * 　　データローダのUpsertを使用し、Salesforceにあるレコードで、すでに存在するものは一括で更新、存在しないものは一括登録という処理をおこなう方法
 			 * →　マージ処理見たい
 			 * */
@@ -51,7 +51,7 @@ public class RestMy {
 //			client.uploadJobData(jobId, csvUpdate);
 			
 			/**
-			 * データUPSERT処理 → 普通の更新処理
+			 * データUPSERT処理 → 普通の更新処理 update
 			 * */
 //			CreateJobResponse createJobResponseUpdate = client.createJob("Teieigun__c", OperationEnum.UPDATE);
 //			String jobId = createJobResponseUpdate.getId();
@@ -63,7 +63,7 @@ public class RestMy {
 //			client.uploadJobData(jobId, csvUpdate);
 			
 			/**
-			 * データ削除処理
+			 * データ削除処理 delete
 			 * */
 			
 			CreateJobResponse createJobResponseUpdate = client.createJob("Teieigun__c", OperationEnum.DELETE);
