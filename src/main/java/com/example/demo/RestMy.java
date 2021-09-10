@@ -22,18 +22,18 @@ public class RestMy {
 					"y.takeuchi@itforce.co.jp.totate.proto",
 					"Itforce111").useSandbox().build();
 
-			//******* データ登録処理 *******//
-/**
-			CreateJobResponse createJobResponse = client.createJob("Teieigun__c", OperationEnum.INSERT);
-			String jobId = createJobResponse.getId();
 
-			String csv = "Name\n" +
-			        "TestAccount1\n" +
-			        "TestAccount4\n" +
-			        "TestAccount5";
-			client.uploadJobData(jobId, csv);
+			/**データ登録処理*/
+//			CreateJobResponse createJobResponse = client.createJob("Teieigun__c", OperationEnum.INSERT);
+//			String jobId = createJobResponse.getId();
+//
+//			String csv = "Name\n" +
+//			        "TestAccount1\n" +
+//			        "TestAccount4\n" +
+//			        "TestAccount5";
+//			client.uploadJobData(jobId, csv);
 
-**/
+
 			
 			/**
 			 * データUPSERT処理 
